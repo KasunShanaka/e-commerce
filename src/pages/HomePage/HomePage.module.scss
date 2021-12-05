@@ -1,4 +1,43 @@
+@import "../../styles/variables.scss";
+
 .container {
-    background-color: blue;
-    height: 400vh;
+   background-color: $SecondaryLayoutColor;
+   background: linear-gradient(90deg, #fdb4bf 0%, #f79aa2 100%);
+   color: $SecondaryFontColor;
+   box-sizing: border-box;
+   height: 100vh;
+}
+.loginBtn {
+   transition: 0.2s;
+
+   &:hover {
+      cursor: pointer;
+      background-color: $ButtonColor;
+      font-weight: bold;
+      border-color: transparent;
+      
+   }
+}
+
+.pageBtn {
+   transition: 0.2s;
+
+   &:hover {
+      cursor: pointer;
+      color: $AccentColor1;
+   }
+}
+
+.header {
+   font-size: $HeaderFontSize;
+   font-weight: bold;
+}
+
+.getTheAppBtn {
+   transition: 0.2s;
+   background-color: $ButtonColor;
+
+   &:hover {
+      cursor: pointer;
+   }
 }

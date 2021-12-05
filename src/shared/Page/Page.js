@@ -5,7 +5,6 @@ const Page = (props) => {
     return (
         <div className={style.container}>
             <div className={style.leftSpace}>
-                this is page
             </div>
             <div className={style.content}>
                 {props.children}

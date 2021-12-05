@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.container {
+    .btn {
+        transition: 0.2s;
+        background-color: $ButtonColor;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

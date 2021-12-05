@@ -1,16 +1,19 @@
+@import '../../styles/variables.scss';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $PrimaryFont;
+    font-size: 14px;
 }
 
 .container {
-    background-color: red;
     color: black;
     display: grid;
     grid-template-columns: 7vw auto;
 }
 
 .leftSpace {
-    background-color: brown;
+    background-color: #59e38c69;
 }
