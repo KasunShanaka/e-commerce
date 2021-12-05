@@ -7,7 +7,7 @@ import Button from '../../shared/Button/Button';
 const HomePage = () => {
     return (
         <Page>
-            <div className={classnames(style.container, "bg-red-600 h-screen")}>
+            <div className={classnames(style.container, "")}>
 
                 {/* navbar */}
                 <nav className="navbar flex items-center justify-between pt-8 pl-4 pr-28">
@@ -36,28 +36,29 @@ const HomePage = () => {
                 </nav>
 
                 {/* page content */}
-                <div className={classnames(style.contents, ' h-5/6 grid grid-cols-3 pt-40')}>
+                <div className={classnames(style.contents, ' grid grid-cols-3 pt-32')}>
                     <div className={classnames(style.left, 'col-span-2 w-2/3')}>
                         <div className={classnames(style.header, '')}>
                             The center of women trending clothes in <br /> the world
                         </div>
-                        <div className={classnames(style.subHeader,'')}>
+                        <div className={classnames(style.subHeader, 'py-4')}>
                             Updated, latest and competitive prices
                         </div>
-                        <Button
-                            buttonName= "Get the app"
-                            size = "2"
-                        >
-                            
-                        </Button>
-                        <div className={classnames(style.leftRightBtns,'')}>
-                        <div className={classnames(style.leftBtn,' bg-red-300 inline-block py-3 px-6 m-2 rounded-xl')}>
-                            <i className="feather-arrow-left"></i>
+                        <div className={classnames(style.getTheAppBtn, ' py-16 ')}>
+                            <Button
+                                buttonName="Get the app"
+                                size="2"
+                            >
+                            </Button>
                         </div>
-                        <div className={classnames(style.rightBtn,' bg-red-400 inline-block py-3 px-6 m-2 rounded-xl')}>
-                            --
+                        <div className={classnames(style.leftRightBtns, '')}>
+                            <div className={classnames(style.leftBtn, ' inline-block py-3 px-6 m-2 rounded-xl shadow-sm')}>
+                                <i className="feather-arrow-left"></i>
+                            </div>
+                            <div className={classnames(style.rightBtn, ' inline-block py-3 px-6 m-2 rounded-xl shadow-sm')}>
+                                <i className="feather-arrow-right"></i>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div className={classnames(style.right, '')}>
                         Choose color
