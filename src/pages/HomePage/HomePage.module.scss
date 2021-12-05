@@ -13,9 +13,8 @@
    &:hover {
       cursor: pointer;
       background-color: $ButtonColor;
-      font-weight: bold;
+      // font-weight: bold;
       border-color: transparent;
-      
    }
 }
 
@@ -53,4 +52,14 @@
       background-color: $PrimaryLayoutColor;
       color: $SecondaryLayoutColor;
    }
+}
+
+.girlImage{
+   z-index: -90;
+   position: absolute;
+   height: 900px;
+   width: 600px;
+   left: 50%;
+   top: 15%;
+   transform: translate(-50%);
 }

@@ -7,7 +7,7 @@ const Button = (props) => {
         <div className={style.container}>
 
             {
-                props.size == "1" ?
+                props.size === 1 ?
                 <div className={classnames(style.btn, 'inline-block px-5 py-2  rounded-3xl shadow-lg text-sm')}>
                     {props.buttonName}
                 </div>:
